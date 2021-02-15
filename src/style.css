@@ -2,52 +2,54 @@ body{
     background-image: linear-gradient(to bottom, #ebaacf, #d297bd, #b984ab, #a1729a, #896188, #835e88, #7c5b89, #755989, #7c649c, #8070b0, #837cc5, #8289da);
     position: relative;
     background-repeat: no-repeat;
-    width: 100% auto;
+    width: 70% ;
     height: 1500px;
-    left: 50px;
+    left: 60px;
 }
 /*Header de la pagina*/
 #logo{
     position: relative;
-    width: 10%;
-    left: 10%;
+    width: 13%;
+    left: 18%;
 }
 #gif{
     position: relative;
-    width: 50%;
-    left: 10%;
+    width: 66%;
+    left: 18%;
 }
 #logo2{
     position: relative;
-    width:10%;
-    left: 10%;
+    width:13%;
+    left: 18%;
 }
-.button{
-    display: inline-flex;
+#logo1{
+    position: relative;
+    width: 13%;
+    left: 18%;
 }
-/*Botones de menu de navegacion*/
-.button li a{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;     
-    font-size: 19px;
-    text-decoration: none;  
-    width: 100%;
-    padding: 17px;
-    margin: 1px;
-    background-color: #c7c105;
-    color: black;
-    text-decoration: none;
-    border-radius: 4px; 
-    text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+#gif1{
+    position: relative;
+    width: 66%;
+    left: 18%;
 }
-.button li a:hover{
-    background-color: whitesmoke;
+#logo1{
+    position: relative;
+    width:13%;
+    left: 18%;
+}
+
+#inicio{
+    background: #f5d8e9;
 }
 
 /*Solo menu completo*/
 nav{
-    position: relative;
-    left: 16%;  
-}
+    position: absolute;
+    left: 23%;
+    width: 100%;  
+} 
+  
+
 /*Lista de menu , diseño*/
 ul{
     list-style: none;
@@ -58,10 +60,10 @@ ul{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
     height: 50%;
     width: 50%;
-    padding: 2%;
+    padding: 9%;
     text-align: center;
     margin: 0px ;
-    left: 18%;
+    left: 27%;
     font-size: 25px; 
     
 }
@@ -89,7 +91,7 @@ p{
     width: 100%;
     top: 45%;
     margin: 0px auto;
-    left: 35%;
+    left: 45%;
 /*Baners costados linkeados*/   
 }
 #banner{
@@ -109,7 +111,7 @@ p{
     top: 18%;
     margin: 0;
     padding: 0;
-    left: 75%;
+    left: 100%;
     border-radius: 10px;
     box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.5);
 }
@@ -117,15 +119,15 @@ p{
 footer{
     position: absolute;
     top: 98%;
-    width: 100%;
-    left: -2.6%;
+    width: 151%;
+    left: -14%;
     margin: 0;
     background: #c7c105;
 }
 /*Boton comprar*/
 #comprar{
     position: absolute;
-    left: 35%;
+    left: 50%;
     top: 80%;
     width: 20%;
     height: 3%;
@@ -136,9 +138,388 @@ footer{
     font-size: 20PX;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
 }
-/**/
+/*Pasar cursor*/
 #comprar:hover{
     background-color:  #f5d8e9 ;
     font-size: 25PX;   
 }
+/*juegos.html*/
+#todo{
+    background: #f5d8e9;
+    text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+}
+/*Botones navegacion 2*/
+.button{
+    display: inline-flex;
+}
+.button li a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;     
+    font-size: 19px;
+    text-decoration: none;  
+    width: 100%;
+    left: 10%;
+    padding: 17px;
+    margin: 1px;
+    background-color: #c7c105;
+    color: black;
+    text-decoration: none;
+    border-radius: 4px; 
+    text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+}
+.button li a:hover{
+    background-color: whitesmoke;
+}
 
+
+/*Juegos*/
+#game1 {
+    position: absolute;
+    width: 60%;
+    height: 18%;
+    top: 18%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+}
+#game1-1{
+    position: absolute;
+    width: 12%;
+    left: 9%;
+    top: 19.5%;
+    left: 1%;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.50));
+    border-radius: 5%;
+}
+/*Botones compras*/
+#bot1{
+    width: 13%;
+    height: 2%;
+    position: absolute;
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    left: 45%;
+    top: 30.5%;
+    background: #483031;
+    COLOR: #BA7F28;    
+}
+#bot1-1{
+    width: 13%;
+    height: 2%;
+    position: absolute;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    left: 45%;
+    top: 33%;  
+    background: #5A1D1E; 
+    COLOR: #BA7F28;
+}
+/*Detalles de item*/
+.des1{
+    position: relative;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 15%;
+    width: 20%;
+    padding: 8%;
+    text-align: right;
+    margin: 0px ;
+    left: 30%;
+    font-size: 13.5px;
+}
+#check{
+    position: absolute;
+    width: 20%;
+    top: 22%;
+    left: 15%;
+}
+#steam{
+    position: absolute;
+    width: 20%;
+    top: 24%;
+    left: 15%;
+}
+#key{
+    position: absolute;
+    width: 20%;
+    top: 26%;
+    left: 15%;
+}
+#jugador{
+    position: absolute;
+    width: 20%;
+    top: 28%;
+    left: 15%;
+}
+#person{
+    position: absolute;
+    width: 20%;
+    top: 30%;
+    left: 15%;
+}
+/*Juego 2*/
+#game2{
+    position: absolute;
+    width: 65%;
+    height: 18%;
+    top: 18%;
+    left: 70%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+}
+#game2-2{
+    position: absolute;
+    width: 12%;
+    left: 9%;
+    top: 19%;
+    left: 71%;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.50));
+    border-radius: 5%;
+}
+/*Descripcion*/
+.des2{
+    position: absolute;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 15%;
+    width: 32%;
+    top: 13%;
+    color: white;
+    text-align: right;
+    margin: 0px ;
+    left: 94%;
+    font-size: 13.5px;
+}
+/*Botones compras 2*/
+#bot2{
+    width: 13%;
+    height: 2%;
+    position: absolute;
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    left: 120%;
+    top: 31%;
+    background: #014337;
+    COLOR: #66B252;    
+}
+#bot2-2{
+    width: 13%;
+    height: 2%;
+    position: absolute;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    left: 120%;
+    top: 33.5%;  
+    background: #013467; 
+    COLOR: #008AC8;
+}
+#check1{
+    position: absolute;
+    width: 20%;
+    top: 22%;
+    left: 85%;
+    color: white;
+}
+#steam1{
+    position: absolute;
+    width: 20%;
+    top: 24%;
+    left: 85%;
+    color: white;
+}
+#key1{
+    position: absolute;
+    width: 20%;
+    top: 26%;
+    left: 85%;
+    color: white;
+}
+#jugador1{
+    position: absolute;
+    width: 20%;
+    top: 28%;
+    left: 85%;
+    color: white;
+}
+#person1{
+    position: absolute;
+    width: 20%;
+    top: 30%;
+    left: 85%;
+    color: white;
+}
+/*juego 3*/
+#game3 {
+    position: absolute;
+    width: 60%;
+    height: 18%;
+    top: 40%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+}
+#game3-3{ 
+    position: absolute;
+    width: 12%;
+    left: 9%;
+    top: 41%;
+    left: 1%;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.50));
+    border-radius: 5%;
+}
+/*descripcion 3*/
+.des3{
+    position: absolute;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 15%;
+    width: 26%;
+    top: 35%;
+    color: white;
+    text-align: right;
+    margin: 0px ;
+    left: 25%;
+    font-size: 13.5px;
+}
+/*Botones compras 3*/
+#bot3{
+    width: 13%;
+    height: 2%;
+    position: absolute;
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    left: 45%;
+    top: 52.5%;
+    background: #B33D60;
+    COLOR: #422433;    
+}
+#bot3-3{
+    width: 13%;
+    height: 2%;
+    position: absolute;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    left: 45%;
+    top: 55%;  
+    background: #561E41; 
+    COLOR: #D64C66;
+}
+#check2{
+    position: absolute;
+    width: 20%;
+    top: 43%;
+    left: 15%;
+    color: white;
+}
+#steam2{
+    position: absolute;
+    width: 20%;
+    top: 45%;
+    left: 15%;
+    color: white;
+}
+#key2{
+    position: absolute;
+    width: 20%;
+    top: 47%;
+    left: 15%;
+    color: white;
+}
+#jugador2{
+    position: absolute;
+    width: 20%;
+    top: 49%;
+    left: 15%;
+    color: white;
+}
+#person2{
+    position: absolute;
+    width: 20%;
+    top: 51%;
+    left: 15%;
+    color: white;
+}
+/*Juego 4*/
+#game4{
+    position: absolute;
+    width: 65%;
+    height: 18%;
+    top: 40%;
+    left: 70%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+}
+#game4-4{
+    position: absolute;
+    width: 12%;
+    left: 9%;
+    top: 41%;
+    left: 71%;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.50));
+    border-radius: 5%;
+}
+/*Descripcion*/
+.des4{
+    position: absolute;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 15%;
+    width: 31%;
+    top: 35%;
+    color: black;
+    text-align: right;
+    margin: 0px ;
+    left: 95%;
+    font-size: 13.5px;
+}
+/*Botones compras 4*/
+#bot4{
+    width: 13%;
+    height: 2%;
+    position: absolute;
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    left: 120%;
+    top: 52.5%;
+    background: #D4B46E;
+    COLOR: #422433;    
+}
+#bot4-4{
+    width: 13%;
+    height: 2%;
+    position: absolute;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    left: 120%;
+    top: 55%;  
+    background: #5D4F6F; 
+    COLOR: #D4B46E;
+}
+#check3{
+    position: absolute;
+    width: 20%;
+    top: 43%;
+    left: 85%;
+    color: black;
+}
+#steam3{
+    position: absolute;
+    width: 20%;
+    top: 45%;
+    left: 85%;
+    color: black;
+}
+#key3{
+    position: absolute;
+    width: 20%;
+    top: 47%;
+    left: 85%;
+    color: black;
+}
+#jugador3{
+    position: absolute;
+    width: 20%;
+    top: 49%;
+    left: 85%;
+    color: black;
+}
+#person3{
+    position: absolute;
+    width: 20%;
+    top: 51%;
+    left: 85%;
+    color: black;
+}
