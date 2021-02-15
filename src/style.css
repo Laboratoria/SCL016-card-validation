@@ -523,3 +523,180 @@ footer{
     left: 85%;
     color: black;
 }
+/*Juegos*/
+#game5 {
+    position: absolute;
+    width: 60%;
+    height: 18%;
+    top: 62%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+}
+#game5-5{ 
+    position: absolute;
+    width: 12%;
+    left: 9%;
+    top: 63.5%;
+    left: 1%;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.50));
+    border-radius: 5%;
+}
+.des5{
+    position: absolute;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 15%;
+    width: 30%;
+    top: 57%;
+    color: white;
+    text-align: right;
+    margin: 0px ;
+    left: 21%;
+    font-size: 13.5px;
+}
+/*Botones compras 4*/
+#bot5{
+    width: 13%;
+    height: 2%;
+    position: absolute;
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    left: 45%;
+    top: 75%;
+    background: #641FBC;
+    COLOR: #C8BADA;    
+}
+#bot5-5{
+    width: 13%;
+    height: 2%;
+    position: absolute;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    left: 45%;
+    top: 77.5%;  
+    background: #F59BB6; 
+    COLOR: #561050;
+}
+#check4{
+    position: absolute;
+    width: 20%;
+    top: 66%;
+    left: 15%;
+    color: white;
+}
+#steam4{
+    position: absolute;
+    width: 20%;
+    top: 68%;
+    left: 15%;
+    color: white;
+}
+#key4{
+    position: absolute;
+    width: 20%;
+    top: 70%;
+    left: 15%;
+    color: white;
+}
+#jugador4{
+    position: absolute;
+    width: 20%;
+    top: 72%;
+    left: 15%;
+    color: white;
+}
+#person4{
+    position: absolute;
+    width: 20%;
+    top: 74%;
+    left: 15%;
+    color: white;
+}
+/*Juegos*/
+#game6 {
+    position: absolute;
+    width: 65%;
+    height: 18%;
+    top: 62%;
+    left: 70%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+}
+#game6-6{ 
+    position: absolute;
+    width: 12%;
+    left: 9%;
+    top: 63.5%;
+    left: 71%;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.50));
+    border-radius: 5%;
+}
+.des6{
+    position: absolute;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 15%;
+    width: 30%;
+    top: 57%;
+    color: black;
+    text-align: right;
+    margin: 0px ;
+    left: 96%;
+    font-size: 13.5px;
+}
+/*Botones compras 4*/
+#bot6{
+    width: 13%;
+    height: 2%;
+    position: absolute;
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    left: 120%;
+    top: 75%;
+    background: #FE7DF1;
+    COLOR: #360331;    
+}
+#bot6-6{
+    width: 13%;
+    height: 2%;
+    position: absolute;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    left: 120%;
+    top: 77.5%;  
+    background: #75B4F2; 
+    COLOR: #092F54;
+}
+#check5{
+    position: absolute;
+    width: 20%;
+    top: 66%;
+    left: 85%;
+    color: black;
+}
+#steam5{
+    position: absolute;
+    width: 20%;
+    top: 68%;
+    left: 85%;
+    color: black;
+}
+#key5{
+    position: absolute;
+    width: 20%;
+    top: 70%;
+    left: 85%;
+    color: black;
+}
+#jugador5{
+    position: absolute;
+    width: 20%;
+    top: 72%;
+    left: 85%;
+    color: black;
+}
+#person5{
+    position: absolute;
+    width: 20%;
+    top: 74%;
+    left: 85%;
+    color: black;
+}
