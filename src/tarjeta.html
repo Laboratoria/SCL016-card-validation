@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RAT GAMES WEBPAY</title>
+    <title>VALIDATOR</title>
     <link rel="icon" href="image/logo.png" type="image/jpg">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Liu+Jian+Mao+Cao&display=swap">
-    <link rel="stylesheet" href="styletarjeta.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="contenedor">
@@ -62,7 +62,7 @@
         <form action="" id="formulario-tarjeta" class="formulario-tarjeta ">
             <div class="grupo">
                 <label for="inputNumero">Número de Tarjeta</label>
-                <input type="text" id="inputNumero" maxlength="19" autocomplete="off">
+                <input type="text" id="cardNumber" maxlength="19" autocomplete="off" required>
             </div>
             <div class="grupo">
                 <label for="inputNombre">Nombre de Tarjeta</label>
@@ -91,10 +91,10 @@
                     <input type="text" id="inputCCV" maxlength="3">
                 </div>
             </div>
-            <button type="submit" class="btn-enviar"> Enviar</button>
+            <button  class="btn-validar" id="btnValidar"> VALIDAR</button>
         </form>
     </div>
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous" ></script> 
-    <script src="tarjeta.js"></script>
+    <script src="index.js" type="module"></script>
 </body>
 </html>

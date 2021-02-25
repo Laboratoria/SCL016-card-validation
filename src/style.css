@@ -1,702 +1,252 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body{
-    background-image: linear-gradient(to bottom, #ebaacf, #d297bd, #b984ab, #a1729a, #896188, #835e88, #7c5b89, #755989, #7c649c, #8070b0, #837cc5, #8289da);
+    background: #F2E5F6;
+    font-family: 'Lato', sans-serif;
+}
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    padding: 40px 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*------------------- Estilos generales tarjeta --------------------*/
+.tarjeta{
+    width: 100%;
+    max-width: 550px;
     position: relative;
-    background-repeat: no-repeat;
-    width: 70% ;
-    height: 1500px;
-    left: 60px;
-}
-/*Header de la pagina*/
-#logo{
-    position: relative;
-    width: 13%;
-    left: 18%;
-}
-#gif{
-    position: relative;
-    width: 66%;
-    left: 18%;
-}
-#logo2{
-    position: relative;
-    width:13%;
-    left: 18%;
-}
-#logo1{
-    position: relative;
-    width: 13%;
-    left: 18%;
-}
-#gif1{
-    position: relative;
-    width: 66%;
-    left: 18%;
-}
-#logo1{
-    position: relative;
-    width:13%;
-    left: 18%;
-}
-
-#inicio{
-    background: #f5d8e9;
-}
-
-/*Solo menu completo*/
-nav{
-    position: absolute;
-    left: 23%;
-    width: 100%;  
-} 
-  
-
-/*Lista de menu , diseño*/
-ul{
-    list-style: none;
-}
-/*Parrafo de compra*/
-.escritura{
-    position: relative;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
-    height: 50%;
-    width: 50%;
-    padding: 9%;
-    text-align: center;
-    margin: 0px ;
-    left: 27%;
-    font-size: 25px; 
+    color: white;
+    transition: .3s ease all;
+    transform: rotateY(0deg);
+    transform-style:preserve-3d ;
+    backface-visibility: hidden;
+    cursor: pointer;
+    z-index: 2;
     
 }
-/*Detalles del parrafo*/
-.parrafo{
-    -webkit-text-stroke: 0.5px #c7c105;
-    text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+.tarjeta.active {
+    transform: rotateY(180deg);
 }
-/*Parrafo secundario*/
-p{
-    position: relative;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    height: 100%;
+.tarjeta > div{
+    padding: 30px;
+    border-radius: 15px;
+    min-height: 315px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 10px 10px 0 rgba(90, 116, 148,0.3) 
+}
+/*------------------ Parte delantera de la tarjeta ---------------------*/
+.tarjeta .delantera{
     width: 100%;
-    padding: 7%;
+    background: url(image/tarjeta3.jpg);
+    background-size: cover;
+}
+.delantera .logo-marca{
+    text-align: right;
+    min-height: 50px;
+}
+.delantera .logo-marca img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 80px;
+}
+.delantera .chip{
+    width: 100%;
+    max-width: 50px;
+    margin-bottom: 20px;
+}
+.delantera .grupo .label{
+    font-size: 16px;
+    color: #f9f9fc;
+    margin-bottom: 5px;
+}
+.delantera .grupo .numero,
+.delantera .grupo .nombre,
+.delantera .grupo .expiracion{
+    color: white;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+.delantera .flexbox{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+/*------------------ Parte trasera de la tarjeta ---------------------*/
+.trasera{
+    background: url(image/tarjeta3.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+.trasera .barra-magnetica{
+    height: 40px;
+    background: rgb(235, 70, 48);
+    width: 100%;
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+.trasera .datos{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.trasera .datos p{
+    margin-bottom: 5px;
+}
+.trasera .datos #firma{
+    width: 70%;
+}
+.trasera .datos #firma .firma{
+    height: 40px;
+    background: repeating-linear-gradient(skyblue 0, skyblue 5px, orange 5px, orange 10px);
+}
+.trasera .datos #firma .firma p{
+    line-height: 40px;
+    font-family: 'Liu Jian Mao Cao', cursive;
+    color: black;
+    font-size: 30px;
+    padding: 0 10px;
+    text-transform: capitalize;
+}
+.trasera .datos #ccv{
+    width: 20%;
+}
+.trasera .datos #ccv .ccv{
+    background: white;
+    height: 40px;
+    color: black;
+    padding: 10px;
     text-align: center;
-    margin: 0px ;
-    left: -6%;
-    font-size: 21px;
 }
-/*Fotografia juegos*/
-.game{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 45%;
-    margin: 0px auto;
-    left: 45%;
-/*Baners costados linkeados*/   
-}
-#banner{
-    position: absolute;
-    width: 300px;
-    height: 900px;
-    top: 18%;
-    margin: 0;
-    padding: 0;
-    border-radius: 10px;
-    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.5);
-}
-#banner2{
-    position: absolute;
-    width: 300px;
-    height: 900px;
-    top: 18%;
-    margin: 0;
-    padding: 0;
-    left: 100%;
-    border-radius: 10px;
-    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.5);
-}
-/*Pie de pagina*/
-footer{
-    position: absolute;
-    top: 98%;
-    width: 151%;
-    left: -14%;
-    margin: 0;
-    background: #c7c105;
-}
-/*Boton comprar*/
-#comprar{
-    position: absolute;
-    left: 50%;
-    top: 80%;
-    width: 20%;
-    height: 3%;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    text-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.2);;
-    border-radius: 10px;
-    background: #c7c105;
-    font-size: 20PX;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
-}
-/*Pasar cursor*/
-#comprar:hover{
-    background-color:  #f5d8e9 ;
-    font-size: 25PX;   
-}
-/*juegos.html*/
-#todo{
-    background: #f5d8e9;
-    text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
-}
-/*Botones navegacion 2*/
-.button{
-    display: inline-flex;
-}
-.button li a{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;     
-    font-size: 19px;
-    text-decoration: none;  
-    width: 100%;
-    left: 10%;
-    padding: 17px;
-    margin: 1px;
-    background-color: #c7c105;
-    color: black;
-    text-decoration: none;
-    border-radius: 4px; 
-    text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
-}
-.button li a:hover{
-    background-color: whitesmoke;
-}
-
-
-/*Juegos*/
-#game1 {
-    position: absolute;
-    width: 60%;
-    height: 18%;
-    top: 18%;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 10px;
-}
-#game1-1{
-    position: absolute;
-    width: 12%;
-    left: 9%;
-    top: 19.5%;
-    left: 1%;
-    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.50));
-    border-radius: 5%;
-}
-/*Botones compras*/
-#bot1{
-    width: 13%;
-    height: 2%;
-    position: absolute;
+.trasera .proteccion{
     font-size: 14px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    left: 45%;
-    top: 30.5%;
-    background: #483031;
-    COLOR: #BA7F28;    
+    line-height: 24px;
 }
-#bot1-1{
-    width: 13%;
-    height: 2%;
-    position: absolute;
-    font-size: 18px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    left: 45%;
-    top: 33%;  
-    background: #5A1D1E; 
-    COLOR: #BA7F28;
+.trasera .link-banco{
+    font-size: 14px;
+    color: white;
 }
-/*Detalles de item*/
-.des1{
+/* Contenedor del boton*/
+.contenedor-btn .btn-abrir-formulario{
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 20px;
+    background: #9330b1;
+    color: white;
     position: relative;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    height: 15%;
-    width: 20%;
-    padding: 8%;
-    text-align: right;
-    margin: 0px ;
-    left: 30%;
-    font-size: 13.5px;
+    top: -25px;
+    z-index: 3;
+    border-radius: 100%;
+    box-shadow: -5px 4px 8px rgba(24, 56, 182, 0.4);
+    padding: 5px;
+    transition: all .2s ease;
+    border: none;
+    cursor: pointer;
 }
-#check{
-    position: absolute;
-    width: 20%;
-    top: 22%;
-    left: 15%;
+.contenedor-btn .btn-abrir-formulario:hover {
+    background: #d5a8e2;
 }
-#steam{
-    position: absolute;
-    width: 20%;
-    top: 24%;
-    left: 15%;
+.contenedor-btn .btn-abrir-formulario.active {
+    transform: rotate(45deg);  
 }
-#key{
-    position: absolute;
-    width: 20%;
-    top: 26%;
-    left: 15%;
-}
-#jugador{
-    position: absolute;
-    width: 20%;
-    top: 28%;
-    left: 15%;
-}
-#person{
-    position: absolute;
-    width: 20%;
-    top: 30%;
-    left: 15%;
-}
-/*Juego 2*/
-#game2{
-    position: absolute;
-    width: 65%;
-    height: 18%;
-    top: 18%;
-    left: 70%;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+/*------------------ formulario de tarjeta -----------------------*/
+.formulario-tarjeta{
+    background: white;
+    width: 100%;
+    padding: 150px 30px 30px 30px;
+    max-width: 800px;
     border-radius: 10px;
+    position: relative;
+    top: -150px;
+    z-index: 1;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: clip-path .3s ease-out;
 }
-#game2-2{
-    position: absolute;
-    width: 12%;
-    left: 9%;
-    top: 19%;
-    left: 71%;
-    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.50));
-    border-radius: 5%;
+.formulario-tarjeta.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
-/*Descripcion*/
-.des2{
-    position: absolute;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    height: 15%;
-    width: 32%;
-    top: 13%;
-    color: white;
-    text-align: right;
-    margin: 0px ;
-    left: 94%;
-    font-size: 13.5px;
+.formulario-tarjeta label{
+    display: block;
+    color: #7d8994;
+    margin-bottom: 5px;
+    font-size: 16px;
 }
-/*Botones compras 2*/
-#bot2{
-    width: 13%;
-    height: 2%;
-    position: absolute;
-    font-size: 14px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    left: 120%;
-    top: 31%;
-    background: #014337;
-    COLOR: #66B252;    
-}
-#bot2-2{
-    width: 13%;
-    height: 2%;
-    position: absolute;
+.formulario-tarjeta input,
+.formulario-tarjeta select,
+.btn-enviar{
+    border: 2px solid #Ced6e0;
     font-size: 18px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    left: 120%;
-    top: 33.5%;  
-    background: #013467; 
-    COLOR: #008AC8;
+    height: 50px;
+    width: 100%;
+    padding: 5px 12px;
+    transition: .3s ease all;
+    border-radius: 5px;
 }
-#check1{
-    position: absolute;
-    width: 20%;
-    top: 22%;
-    left: 85%;
-    color: white;
+.formulario-tarjeta input:hover,
+.formulario-tarjeta select:hover {
+    border: 2px solid #9330b1;
 }
-#steam1{
-    position: absolute;
-    width: 20%;
-    top: 24%;
-    left: 85%;
-    color: white;
+.formulario-tarjeta input:focus,
+.formulario-tarjeta select:focus {
+    outline: rgba(4,4,4);
+    box-shadow: 1px 7px 10px -5px rgba(90, 116, 148,0.3);
 }
-#key1{
-    position: absolute;
-    width: 20%;
-    top: 26%;
-    left: 85%;
-    color: white;
+.formulario-tarjeta input{
+    margin-bottom: 20px;
+    text-transform: uppercase;
 }
-#jugador1{
-    position: absolute;
-    width: 20%;
-    top: 28%;
-    left: 85%;
-    color: white;
+.formulario-tarjeta .flexbox{
+    display: flex;
+    justify-content: space-between;
 }
-#person1{
-    position: absolute;
-    width: 20%;
-    top: 30%;
-    left: 85%;
-    color: white;
+.formulario-tarjeta .expira{
+    width: 100%;
 }
-/*juego 3*/
-#game3 {
-    position: absolute;
-    width: 60%;
-    height: 18%;
-    top: 40%;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 10px;
+.formulario-tarjeta .ccv{
+    min-width: 100px;
 }
-#game3-3{ 
-    position: absolute;
-    width: 12%;
-    left: 9%;
-    top: 41%;
-    left: 1%;
-    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.50));
-    border-radius: 5%;
+.formulario-tarjeta .grupo-select{
+    width: 100%;
+    margin-right: 20px;
+    position: relative;
 }
-/*descripcion 3*/
-.des3{
-    position: absolute;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    height: 15%;
-    width: 26%;
-    top: 35%;
-    color: white;
-    text-align: right;
-    margin: 0px ;
-    left: 25%;
-    font-size: 13.5px;
+.formulario-tarjeta select{
+    -webkit-appearance: none;
 }
-/*Botones compras 3*/
-#bot3{
-    width: 13%;
-    height: 2%;
+.formulario-tarjeta .grupo-select i {
     position: absolute;
-    font-size: 14px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    left: 45%;
-    top: 52.5%;
-    background: #B33D60;
-    COLOR: #422433;    
+    color: #9330b1;
+    top: 18px;
+    right: 15px;
+    transition: .3s ease all;
 }
-#bot3-3{
-    width: 13%;
-    height: 2%;
-    position: absolute;
-    font-size: 18px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    left: 45%;
-    top: 55%;  
-    background: #561E41; 
-    COLOR: #D64C66;
+.formulario-tarjeta .grupo-select:hover i{
+    color: #e0c4e9
 }
-#check2{
-    position: absolute;
-    width: 20%;
-    top: 43%;
-    left: 15%;
-    color: white;
+.formulario-tarjeta .btn-validar{
+    border: none;
+    padding: 10px;
+    width: 740px;
+    font-size: 22px;
+    color: #e0c4e9;
+    background: #9330b1;
+    box-shadow: 2px 2px 10px 0px rgba(0,85,212,0.4);
+    cursor: pointer;
 }
-#steam2{
-    position: absolute;
-    width: 20%;
-    top: 45%;
-    left: 15%;
-    color: white;
-}
-#key2{
-    position: absolute;
-    width: 20%;
-    top: 47%;
-    left: 15%;
-    color: white;
-}
-#jugador2{
-    position: absolute;
-    width: 20%;
-    top: 49%;
-    left: 15%;
-    color: white;
-}
-#person2{
-    position: absolute;
-    width: 20%;
-    top: 51%;
-    left: 15%;
-    color: white;
-}
-/*Juego 4*/
-#game4{
-    position: absolute;
-    width: 65%;
-    height: 18%;
-    top: 40%;
-    left: 70%;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 10px;
-}
-#game4-4{
-    position: absolute;
-    width: 12%;
-    left: 9%;
-    top: 41%;
-    left: 71%;
-    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.50));
-    border-radius: 5%;
-}
-/*Descripcion*/
-.des4{
-    position: absolute;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    height: 15%;
-    width: 31%;
-    top: 35%;
-    color: black;
-    text-align: right;
-    margin: 0px ;
-    left: 95%;
-    font-size: 13.5px;
-}
-/*Botones compras 4*/
-#bot4{
-    width: 13%;
-    height: 2%;
-    position: absolute;
-    font-size: 14px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    left: 120%;
-    top: 52.5%;
-    background: #D4B46E;
-    COLOR: #422433;    
-}
-#bot4-4{
-    width: 13%;
-    height: 2%;
-    position: absolute;
-    font-size: 18px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    left: 120%;
-    top: 55%;  
-    background: #5D4F6F; 
-    COLOR: #D4B46E;
-}
-#check3{
-    position: absolute;
-    width: 20%;
-    top: 43%;
-    left: 85%;
-    color: black;
-}
-#steam3{
-    position: absolute;
-    width: 20%;
-    top: 45%;
-    left: 85%;
-    color: black;
-}
-#key3{
-    position: absolute;
-    width: 20%;
-    top: 47%;
-    left: 85%;
-    color: black;
-}
-#jugador3{
-    position: absolute;
-    width: 20%;
-    top: 49%;
-    left: 85%;
-    color: black;
-}
-#person3{
-    position: absolute;
-    width: 20%;
-    top: 51%;
-    left: 85%;
-    color: black;
-}
-/*Juegos*/
-#game5 {
-    position: absolute;
-    width: 60%;
-    height: 18%;
-    top: 62%;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 10px;
-}
-#game5-5{ 
-    position: absolute;
-    width: 12%;
-    left: 9%;
-    top: 63.5%;
-    left: 1%;
-    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.50));
-    border-radius: 5%;
-}
-.des5{
-    position: absolute;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    height: 15%;
-    width: 30%;
-    top: 57%;
-    color: white;
-    text-align: right;
-    margin: 0px ;
-    left: 21%;
-    font-size: 13.5px;
-}
-/*Botones compras 4*/
-#bot5{
-    width: 13%;
-    height: 2%;
-    position: absolute;
-    font-size: 14px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    left: 45%;
-    top: 75%;
-    background: #641FBC;
-    COLOR: #C8BADA;    
-}
-#bot5-5{
-    width: 13%;
-    height: 2%;
-    position: absolute;
-    font-size: 18px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    left: 45%;
-    top: 77.5%;  
-    background: #F59BB6; 
-    COLOR: #561050;
-}
-#check4{
-    position: absolute;
-    width: 20%;
-    top: 66%;
-    left: 15%;
-    color: white;
-}
-#steam4{
-    position: absolute;
-    width: 20%;
-    top: 68%;
-    left: 15%;
-    color: white;
-}
-#key4{
-    position: absolute;
-    width: 20%;
-    top: 70%;
-    left: 15%;
-    color: white;
-}
-#jugador4{
-    position: absolute;
-    width: 20%;
-    top: 72%;
-    left: 15%;
-    color: white;
-}
-#person4{
-    position: absolute;
-    width: 20%;
-    top: 74%;
-    left: 15%;
-    color: white;
-}
-/*Juegos*/
-#game6 {
-    position: absolute;
-    width: 65%;
-    height: 18%;
-    top: 62%;
-    left: 70%;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 10px;
-}
-#game6-6{ 
-    position: absolute;
-    width: 12%;
-    left: 9%;
-    top: 63.5%;
-    left: 71%;
-    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.50));
-    border-radius: 5%;
-}
-.des6{
-    position: absolute;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    height: 15%;
-    width: 30%;
-    top: 57%;
-    color: black;
-    text-align: right;
-    margin: 0px ;
-    left: 96%;
-    font-size: 13.5px;
-}
-/*Botones compras 4*/
-#bot6{
-    width: 13%;
-    height: 2%;
-    position: absolute;
-    font-size: 14px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    left: 120%;
-    top: 75%;
-    background: #FE7DF1;
-    COLOR: #360331;    
-}
-#bot6-6{
-    width: 13%;
-    height: 2%;
-    position: absolute;
-    font-size: 18px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    left: 120%;
-    top: 77.5%;  
-    background: #75B4F2; 
-    COLOR: #092F54;
-}
-#check5{
-    position: absolute;
-    width: 20%;
-    top: 66%;
-    left: 85%;
-    color: black;
-}
-#steam5{
-    position: absolute;
-    width: 20%;
-    top: 68%;
-    left: 85%;
-    color: black;
-}
-#key5{
-    position: absolute;
-    width: 20%;
-    top: 70%;
-    left: 85%;
-    color: black;
-}
-#jugador5{
-    position: absolute;
-    width: 20%;
-    top: 72%;
-    left: 85%;
-    color: black;
-}
-#person5{
-    position: absolute;
-    width: 20%;
-    top: 74%;
-    left: 85%;
-    color: black;
+.formulario-tarjeta .btn-validar:hover{
+    background: #e0c4e9;
+    color: #9330b1;
 }
