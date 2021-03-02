@@ -12,15 +12,15 @@ describe('validator', () => {
     });
 
     it.skip('debería retornar true para "4083952015263"', () => {
-      // escribe aquí tu test
+      expect(validator.isValid("4083952015263")).toBeTrue(); //toBe(true)
     });
 
     it.skip('debería retornar true para "79927398713"', () => {
-      // escribe aquí tu test
+      expect(validator.isValid("79927398713")).toBeTrue(); //toBe(true)
     });
 
     it.skip('debería retornar false para "1234567890"', () => {
-      // escribe aquí tu test
+      expect(validator.isValid("1234567890")).toBeFalse(); //toBe(false)
     });
   });
 

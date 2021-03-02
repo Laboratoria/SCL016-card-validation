@@ -127,7 +127,7 @@ let btnValidar = document.getElementById("btnValidar");
 
 btnValidar.addEventListener('click',()=>{
     cardNumber=document.getElementById('cardNumber').value;
-    let validation = validator.isValid(cardNumber);
+    let validation = validator.isValid(cardNumber); // definimos y vinculamos
     console.log(validation)
     let maskify = validator.maskify(cardNumber);
     console.log(maskify)
@@ -138,17 +138,17 @@ btnValidar.addEventListener('click',()=>{
         arraySum += twoCardNumber [i];
     };
 
-    if (cardNumber.length < 16){
+    if (cardNumber.length < 16){ // si el largo es menor de 16 da el alerta
         alert('EL número de tarjeta es invalido, ingrese nuevamente.');
     }
-    else if (cardNumber === 0){
+    else if (cardNumber.length === 0){ // si el largo es igual a 0 da el alerta
         alert('EL número de tarjeta es invalido, ingrese nuevamente.')
     }
-    else if(validation === true){
+    else if(validation === true){ // si es true usa el maskify + el alerta
         alert( 'tarjeta ' + maskify + ' valida');
     }
     else{
-        alert( 'tarjeta ' + maskify + ' invalida')
+        alert( 'tarjeta ' + maskify + ' invalida') // si no se cumple la tarjeta es invalida junto con el maskify activado
     };
 
 
