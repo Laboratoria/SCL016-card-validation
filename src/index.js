@@ -126,7 +126,7 @@ let btnValidar = document.getElementById("btnValidar");
 
 
 btnValidar.addEventListener('click',()=>{
-    cardNumber=document.getElementById('cardNumber').value;
+    cardNumber =document.getElementById('cardNumber').value;
     let validation = validator.isValid(cardNumber); // definimos y vinculamos
     console.log(validation)
     let maskify = validator.maskify(cardNumber);
